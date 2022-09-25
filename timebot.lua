@@ -3,7 +3,7 @@
 TimeBot program
 By Out-Feu
 
-version 1.0.0
+version 1.1.0
 
 Free to distribute/alter
 so long as proper credit to original
@@ -17,7 +17,7 @@ You can also connect monitors to display the current time
 function getCurrentText()
  if isRebootTime(time.hour) then
   if time.min == 0 then
-   return "Il est " .. time.hour .. ", le serveur redémarrera dans 1 heure, profitez en pour faire une pause"
+   return "Il est " .. time.hour .. "H, le serveur redémarrera dans 1 heure, profitez en pour faire une pause"
   elseif time.min == 30 then
    return "Redémarrage dans 30 minutes"
   elseif time.min == 45 then
@@ -47,12 +47,20 @@ end
 
 function isRebootTime(hour)
  hour = (hour + 1) % 24
- for k,v in pairs(reboots) do
+ for k, v in pairs(reboots) do
   if hour == v then
    return true
   end
  end
  return false
+end
+
+function changeResolution()
+ for k, v in pairs(monitors) do
+  v.setTextScale(1) -- set resolution back to initial value
+  local w, h = v.getSize()
+  v.setTextScale(0.5 * math.min(math.floor((w / 5 / 0.5) + 0.5), math.floor((h / 0.5) + 0.5), 10))
+ end
 end
 
 function displayTime()
@@ -61,14 +69,14 @@ function displayTime()
  end
  local text = ""
  if time.hour < 10 then
-	text = "0" .. time.hour
+  text = "0" .. time.hour
  else
-	text = "" .. time.hour
+  text = "" .. time.hour
  end
  if time.min < 10 then
-	text = text .. ":0" .. time.min
+  text = text .. ":0" .. time.min
  else
-	text = text .. ":" .. time.min
+  text = text .. ":" .. time.min
  end
  for k,v in pairs(monitors) do
   local w, h = v.getSize()
@@ -124,6 +132,7 @@ last_time = nil
 time = nil
 
 --------------------------------------------------------------------------------
+changeResolution()
 time = os.date("*t", os.epoch("local") / 1000)
 displayTime()
 os.startTimer(60 - time.sec)
