@@ -18,4 +18,4 @@ Pastebin: [L6KHApYA](https://pastebin.com/L6KHApYA)
 
 Send chat messages to remind of the current hour and when is the next server restart.
 
-Pastebin: [rpPUVA4J](https://pastebin.com/rpPUVA4J)
+Pastebin: [cJF2s4r6](https://pastebin.com/cJF2s4r6)
