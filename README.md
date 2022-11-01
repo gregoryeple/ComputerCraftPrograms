@@ -1,6 +1,6 @@
 # AR Glasses
 
-> Requires [Advanced Peripherals](https://github.com/Seniorendi/AdvancedPeripherals)
+> Requires [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
 
 Display In-game date, hour and weather in the corner your screen.
 
@@ -12,9 +12,17 @@ Redstone controllable music loop for the explorer's guild.
 
 Pastebin: [L6KHApYA](https://pastebin.com/L6KHApYA)
 
+# Pressure
+
+> Requires [PneumaticCraft: Repressurized](https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized)
+
+Send a redstone signal when pressure reach the danger level.
+
+Pastebin: [vBGZYUXf](https://pastebin.com/vBGZYUXf)
+
 # TimeBot
 
-> Requires [Advanced Peripherals](https://github.com/Seniorendi/AdvancedPeripherals)
+> Requires [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
 
 Send chat messages to remind of the current hour and when is the next server restart.
 
