@@ -16,9 +16,17 @@ Pastebin: [L6KHApYA](https://pastebin.com/L6KHApYA)
 
 > Requires [PneumaticCraft: Repressurized](https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized)
 
-Send a redstone signal when pressure reach the danger level.
+Emit a redstone signal when pressure reach the danger level.
 
 Pastebin: [vBGZYUXf](https://pastebin.com/vBGZYUXf)
+
+# SleepBot
+
+> Requires [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals) & [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau)
+
+Add chat commands to change the time of day.
+
+Pastebin: [7R8rV4JJ](https://pastebin.com/7R8rV4JJ)
 
 # TimeBot
 
