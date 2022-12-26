@@ -22,11 +22,13 @@ Pastebin: [vBGZYUXf](https://pastebin.com/vBGZYUXf)
 
 # SleepBot
 
-> Requires [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals) & [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau)
+> Requires [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)  
+> Requires [Ars Nouveau](https://www.curseforge.com/minecraft/mc-mods/ars-nouveau) to change the time of day  
+> Requires [Botania](https://www.curseforge.com/minecraft/mc-mods/botania) to change the weather
 
-Add chat commands to change the time of day.
+Add chat commands to change the time of day and the weather.
 
-Pastebin: [7R8rV4JJ](https://pastebin.com/7R8rV4JJ)
+Pastebin: [tNNwsPzP](https://pastebin.com/tNNwsPzP)
 
 # TimeBot
 
