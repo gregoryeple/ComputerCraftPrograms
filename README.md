@@ -28,7 +28,7 @@ Pastebin: [vBGZYUXf](https://pastebin.com/vBGZYUXf)
 
 Add chat commands to change the time of day and the weather.
 
-Pastebin: [tNNwsPzP](https://pastebin.com/tNNwsPzP)
+Pastebin: [JNfgGxtA](https://pastebin.com/JNfgGxtA)
 
 # TimeBot
 
@@ -37,3 +37,11 @@ Pastebin: [tNNwsPzP](https://pastebin.com/tNNwsPzP)
 Send chat messages to remind of the current hour and when is the next server restart.
 
 Pastebin: [cJF2s4r6](https://pastebin.com/cJF2s4r6)
+
+# WeatherBot
+
+> Requires [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals) and [Botania](https://www.curseforge.com/minecraft/mc-mods/botania)
+
+Add chat commands to change the weather.
+
+Pastebin: [cuhvYuGk](https://pastebin.com/cuhvYuGk)
