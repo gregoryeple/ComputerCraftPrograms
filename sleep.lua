@@ -3,7 +3,7 @@
 SleepBot program
 By Out-Feu
 
-version 2.1.0
+version 2.2.0
 
 Free to distribute/alter
 so long as proper credit to original
@@ -60,6 +60,17 @@ function setNight()
   sleep(15)
  else
   sendText("Je suis à court de 'Tablet of Moonfall' pour mettre la nuit")
+ end
+end
+
+function setClearWeather()
+ if isRainning() == false then
+  sendText("Il ne pleut pas")
+ elseif useItem("ars_nouveau:ritual_cloudshaping") then
+  sendText("La pluie va s'en aller")
+  sleep(15)
+ else
+  sendText("Je suis à court de 'Tablet of Cloudshaping' pour retirer la pluie")
  end
 end
 
@@ -159,9 +170,11 @@ function showHelp(showItem)
   if not showItem then
    help = help .. "'day' - Met le jour\n"
    help = help .. "'night' - Met la nuit\n"
+   help = help .. "'clear' - Retire la pluie\n"
   else
    help = help .. "'day' - Utilise 1 'Tablet of Sunrise'\n"
    help = help .. "'night' - Utilise 1 'Tablet of Moonfall'\n"
+   help = help .. "'clear' - Utilise 1 'Tablet of Cloudshaping'\n"
   end
  end
  if canChangeWeather() then
@@ -239,6 +252,8 @@ repeat --main loop
    setDay()
   elseif canChangeTime() and args[2] == "night" then
    setNight()
+  elseif canChangeTime() and args[2] == "clear" then
+   setClearWeather()
   elseif canChangeWeather() and table.getn(args) > 2 and args[2] == "weather" and args[3] == "clear" then
    setClear()
   elseif canChangeWeather() and table.getn(args) > 2 and args[2] == "weather" and args[3] == "rain" then
