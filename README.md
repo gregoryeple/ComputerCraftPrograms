@@ -34,7 +34,7 @@ Pastebin: [JNfgGxtA](https://pastebin.com/JNfgGxtA)
 
 > Requires [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
 
-Logs players connexion.
+Logs players connections.
 
 Pastebin: [SZKXyCHR](https://pastebin.com/SZKXyCHR)
 
