@@ -30,6 +30,14 @@ Add chat commands to change the time of day and the weather.
 
 Pastebin: [JNfgGxtA](https://pastebin.com/JNfgGxtA)
 
+# SpyBot
+
+> Requires [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
+
+Logs players connexion.
+
+Pastebin: [SZKXyCHR](https://pastebin.com/SZKXyCHR)
+
 # TimeBot
 
 > Requires [Advanced Peripherals](https://www.curseforge.com/minecraft/mc-mods/advanced-peripherals)
