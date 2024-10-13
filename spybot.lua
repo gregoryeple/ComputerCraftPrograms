@@ -3,7 +3,7 @@
 SpyBot program
 By Out-Feu
 
-version 1.0.0
+version 1.0.1
 
 Free to distribute/alter
 so long as proper credit to original
@@ -45,6 +45,17 @@ function updateTempFile()
  end
 end
 
+function getLogText(join, player)
+ local logTime = os.date("%x %X", os.epoch("local") / 1000)
+ local logText
+ if join then
+  logText = "[" .. logTime .. "] " .. player .. " joined"
+ else
+  logText = "[" .. logTime .. "] " .. player .. " left"
+ end
+ return logText
+end
+
 function updatePlayerFile(join, player)
  if player == '' then
   return
@@ -55,17 +66,14 @@ function updatePlayerFile(join, player)
  else
   file = fs.open(playerFile .. "/" .. player .. ".txt" , "a")
  end
- local time = os.date("%x %X", os.epoch("local") / 1000)
- if join then
-  file.writeLine("[" .. time .. "] " .. player .. " joined")
- else
-  file.writeLine("[" .. time .. "] " .. player .. " left")
- end
+ local logText = getLogText(join, player)
+ file.writeLine(logText)
+ print(logText)
  file.close()
 end
 
 function updatePlayerList(addPlayer, player)
- local index = table.find(player)
+ local index = table.find(players, player)
  updatePlayerFile(addPlayer, player)
  if addPlayer and index == nil then
   table.insert(players, player)
@@ -105,7 +113,7 @@ for k, v in pairs(per) do
 end
 per = nil
 
-singleFile = false -- Store the data inside a single file instead of using a file by player
+singleFile = false -- Store the data inside a single file instead of using a file for each player
 playerFile = "players" -- Name of the file or directory in which the data in stored
 tempFile = "currentPlayers.txt" -- Name of the file in which are stored the names of the currently connected players
 
