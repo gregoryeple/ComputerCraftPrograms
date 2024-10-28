@@ -3,7 +3,7 @@
 SpyBot program
 By Out-Feu
 
-version 1.0.1
+version 1.0.2
 
 Free to distribute/alter
 so long as proper credit to original
@@ -79,7 +79,7 @@ function updatePlayerList(addPlayer, player)
   table.insert(players, player)
   updateTempFile()
  elseif not addPlayer and index ~= nil then
-  table.remove(players, line)
+  table.remove(players, index)
   updateTempFile()
  end
 end
