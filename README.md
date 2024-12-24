@@ -12,6 +12,14 @@ Redstone controllable music loop for the explorer's guild.
 
 Pastebin: [L6KHApYA](https://pastebin.com/L6KHApYA)
 
+# PeripheralDetector
+
+Display every connected peripheral and their methods.
+
+Can be printed on the standard output, exported to a file or viewed in a user interface.
+
+Pastebin: [wRXYASUQ](https://pastebin.com/wRXYASUQ)
+
 # Pressure
 
 > Requires [PneumaticCraft: Repressurized](https://www.curseforge.com/minecraft/mc-mods/pneumaticcraft-repressurized)
